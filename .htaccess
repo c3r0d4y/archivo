@@ -1,0 +1,30 @@
+#ACtivamos escritura
+RewriteEngine On
+
+#Sobre escribe el directorio de carpetas en la barra de navegacion
+RewriteCond %{REQUEST_FILENAME} !-d
+
+#Sobre escribe nombres  de archivos en la barra de navegacion
+RewriteCond %{REQUEST_FILENAME} !-f
+
+#Sobre escribe nombres  de archivos en la barra de navegacion
+RewriteCond %{REQUEST_FILENAME} !-l
+
+#Capturamos los datos ingresados por el navegador y los redirigimos a index.php
+RewriteRule ^(.*)$ index.php?url=$1 [L,QSA]
+
+
+#Forzar a usar https
+#RewriteCond %{HTTPS} off
+#RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+#Elimina la vulnerabilidad  HTTS
+#Header always set Strict-Transport-Security "max-age=31536000" env=HTTPS
+#Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+
+php_value post_max_size 2000M
+php_value upload_max_filesize 2000M
+php_value memory_limit 256M
+php_value max_input_time 600
+php_value max_execution_time 600
+Options -Indexes
