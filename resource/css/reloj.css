@@ -1,0 +1,21 @@
+.c_reloj{
+text-align: center;
+}
+#fechador{
+  font-size: 2em;
+  max-width: 200px;
+  
+  display: inline-block;
+
+}
+#reloj{
+  font-size: 2em;
+  font-weight: bolder;
+  max-width: 500px;
+  
+  display: inline-block;
+}
+.sonlas{
+	display: inline-block;
+	 font-size: 2em;
+}

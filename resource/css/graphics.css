@@ -1,0 +1,14 @@
+
+canvas {
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		-ms-user-select: none;
+		background-color: white;
+             
+}
+
+.graficas{
+      max-width: 1300px;
+      max-height: 100%;
+      margin: 0 auto; 
+}
