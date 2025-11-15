@@ -4,6 +4,7 @@
     const VIEWS = 'views/';
     define ('DFT', 'default');
     define ('RC', 'resource');
-    define ('URL', 'http://127.0.0.1/collector/');
+    define ('URL', 'https://ciberdefensa.com.mnx/');
     define ('SALT', 'piensosinexistir');
+
 ?>
