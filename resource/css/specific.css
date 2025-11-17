@@ -1,0 +1,245 @@
+/*=================================================================Index*/   
+/* --- Contenedor Principal (Login) --- */
+.login-container {
+    position: relative;
+    z-index: 10;
+    width: 90%;
+    max-width: 420px;
+    padding: 50px;
+    background: var(--form-bg);
+    border-radius: var(--border-radius);
+    /* Sombra suave minimalista */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    border: 1px solid var(--subtle-color);
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* Título */
+.login-container h1 {
+    font-size: 2.2rem;
+    margin-bottom: 5px;
+    color: var(--accent-color);
+    letter-spacing: 6px;
+    font-weight: 200; /* Extra delgado para el futurismo minimalista */
+    text-transform: uppercase;
+}
+        
+.login-container h2 {
+    font-size: 0.9rem;
+    color: var(--accent-color);
+    font-weight: 300;
+    margin-bottom: 40px;
+    border-bottom: 1px solid var(--subtle-color);
+    padding-bottom: 10px;
+}
+
+/* Campos de Formulario */
+.input-group {
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+   font-size: 0.8rem;
+    color: var(--accent-color);
+    font-weight: 600;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 15px;
+    background: var(--background-color);
+    border: 1px solid var(--subtle-color);
+    border-radius: var(--border-radius);
+    color: var(--text-color);
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: var(--accent-color);
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(106, 106, 106, 0.2); /* Sutil halo gris */
+    background: white;
+}
+        
+/* Enlaces secundarios */
+.secondary-links {
+    text-align: center;
+    margin-top: 35px;
+    font-size: 0.8rem;
+}
+/* Contenedor Principal ============================================================================================*/
+.container {
+    max-width: 1300px;
+    margin: 120px auto;
+    padding: 0 20px;
+}
+
+/* Filas */
+.row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+/* Cuadros */
+.card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.card-title {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #667eea;
+}
+.card-image {
+    width: 100%;
+    height: 180px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 48px;
+    margin: 0 auto;
+}
+
+/* Tabla para Fila 3 */
+.card-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+.card-table td {
+    padding: 12px;
+    border: 1px solid #e0e0e0;
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+}
+.card-table .seis {
+    padding: 5px;
+}
+.card-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/*===============================================================================expedientes */
+.tab-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    color: #94a3b8;
+}
+
+.tab-menu li {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border: 1px solid rgba(59, 130, 246, 0.3);
+    margin-right: 5px;
+    background: linear-gradient(135deg, #8c7b6e 0%, #a78e7e 100%);/*Color cafe pestañas*/
+    color: white;
+    transition: background-color 0.3s ease;
+    }
+
+.tab-menu li.active {
+    background-color: #2f4473;
+    border-bottom: 1px solid #fff; /* Para que parezca que la pestaña "flota" */
+    font-weight: bold;
+    }
+
+.tab-content {
+    padding: 20px;
+    border-top: none;
+}
+
+.tab-pane {
+    display: none; /* Oculta todas las pestañas por defecto */
+    }
+
+.tab-pane.active {
+    display: block; /* Muestra solo la pestaña activa */
+    }
+
+/*======================================================Avatars==========================*/
+.avatars{
+    
+    text-align: left;
+    border-bottom:3px solid #f8441d;
+}
+.inter{
+    border:6px solid #85C1E9 ;
+}
+.dark{
+    border:6px solid #454545;
+}
+
+
+.avatars td{
+    /*border: #b2b2b2 1px solid;*/
+}
+.admin{
+    width: 40%;
+}
+.redes_avatar{
+    color: black;
+    width: 450px;
+    padding: 5px;
+}
+.redes_avatar td{
+    width: 50px;
+    height: 50px;
+    /*border: #b2b2b2 1px solid;*/
+    text-align: center;
+}
+ta{
+    color: #f8441d;
+    display: inline;
+}
+/*======================================================Bitacora==========================*/
+.acciones{
+    width: 50%;
+}
+/*=================================================Activos intranet===================================*/
+.c_aicia{
+    text-align: center;
+}
+.c_aicia div{
+    display: inline-block;
+    background-color: #8c7b6e;
+    width: 15%;
+    height: 30px;
+    padding: 3px;
+    font-size: 1.1em;
+    color: #F8F8FF;
+}
+.c_aicia div:hover{
+    color: black;
+    background-color: #C0C0C0;
+    cursor: pointer;
+}
