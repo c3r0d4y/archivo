@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 21-11-2025 a las 19:25:24
+-- Tiempo de generación: 17-11-2025 a las 05:37:33
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -218,14 +218,6 @@ CREATE TABLE `logs` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Volcado de datos para la tabla `logs`
---
-
-INSERT INTO `logs` (`id_log`, `tipo_log`, `accion_log`, `pagina_log`, `ip_log`, `usuario_log`, `fechaHora`, `rol_log`) VALUES
-(3214, 'IPNA', 'IP no autorizada', '/archivo/Validacion/validacion', '127.0.0.1', 'Cer0day', '2025-11-21 02:30:50', 'Administrador'),
-(3215, 'IPNA', 'IP no autorizada', '/archivo/Validacion/validacion', '127.0.0.1', 'Cer0day', '2025-11-21 02:31:03', 'Administrador');
-
---
 -- Disparadores `logs`
 --
 DELIMITER $$
@@ -370,7 +362,7 @@ CREATE TABLE `usuarios` (
 --
 
 INSERT INTO `usuarios` (`id_usuario`, `id_grado`, `id_especialidad`, `matricula`, `nombre_usuario`, `foto_usuario`, `id_rol`, `id_unidad`, `usuario`, `password`, `pin`, `estado_usuario`, `intentos_usuario`, `random`, `tiempo`) VALUES
-(1, 7, 1, 'X-0000003', 'Cer0day', '962025240727.png', 1, 2, 'fb9580b46711e44215ebe01366635c3d000e3917d2eaa096149e598fdb3fc398', '$2y$10$KT8Lt4JAl/kjGGQJvCohHOwOHvIgrD0cOElERyeLl5JQTFHJMntq2', '', 0, 0, 1, '2025-11-21 02:31:08'),
+(1, 7, 1, 'X-0000003', 'Cer0day', '962025240727.png', 1, 2, 'fb9580b46711e44215ebe01366635c3d000e3917d2eaa096149e598fdb3fc398', '$2y$10$KT8Lt4JAl/kjGGQJvCohHOwOHvIgrD0cOElERyeLl5JQTFHJMntq2', '', 1, 0, 1, '2025-11-16 22:56:26'),
 (34, 4, 1, '12345', 'Ana de Armas', '722025111038.jpg', 1, 1, '4801998543270887907ffd3319a374cf535f2f4c3d01f5fa701677c1fda036c8', '$2y$10$pKOAITKSwKj/Xp.yCXlkL.nnqir8WZQMNzDYGAexAEvtlw9QFU1yq', '1f0320540d7ef8f91cabd0b8808bb3f08b1fc58bef7d3b9942e02462f3d1c4bb', 0, 0, 1, '2025-11-14 05:15:07'),
 (52, 1, 1, 'C00000003', 'Conchita de Jesus', '572025111017.jpg', 1, 1, 'cadafb04258b75fc9f71281c8cf4c0c37cf735d0ca631c4d90469554283068f3', '$2y$10$wHiXAXHtQE/EYD2cvngxke4lepIp6hXl.Kwi6SHUK93K5I4Ecerye', '', 3, 0, 0, '2025-10-29 00:37:27');
 
@@ -537,7 +529,7 @@ ALTER TABLE `lanzadores`
 -- AUTO_INCREMENT de la tabla `logs`
 --
 ALTER TABLE `logs`
-  MODIFY `id_log` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3216;
+  MODIFY `id_log` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3214;
 
 --
 -- AUTO_INCREMENT de la tabla `roles`
