@@ -5,5 +5,5 @@ Instrucciones
 - crea una carpeta que se llame archivo y ahí pega el contenido de mi git
 - crea una base de datos con el nombre "archivo"
 - Importa el archivo .sql
-- Carga la carpeta archivo en tu servidor virtual
 
+*DEMO: https://archivo.ciberdefensa.com.mx/Index/index
