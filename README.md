@@ -9,4 +9,4 @@ Instrucciones
 *DEMO: https://archivo.ciberdefensa.com.mx/Index/index
 
 
-Tutorial en youtube: https://youtu.be/CQhI70uCCVk
+Tutorial de instalación en youtube: https://youtu.be/CQhI70uCCVk
